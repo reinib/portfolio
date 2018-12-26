@@ -1,0 +1,129 @@
+
+/* practice.html */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    /* opacity: 0.65; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url('/imgs/background1.jpg');
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url('/imgs/background2.jpg');
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url('/imgs/background3.jpg');
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .skills-caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .caption span.border {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+
+  .navborder {
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    border: 1px solid black;      
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  /* keep not error! */
+  height: 106%;
+  width: auto;
+}
+
+/* visited link */
+a:link {
+  color: #ddd;
+}
+
+/* mouse over link */
+a:hover {
+  color: #0078ff;
+}
+
+.react-icon {
+  -webkit-animation:spin 40s linear infinite;
+  -moz-animation:spin 40s linear infinite;
+  animation:spin 40s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+
+    .display-none {
+      display: none;
+    }
+
+    .pyramid {
+      display: none;
+    }
+
+  }
