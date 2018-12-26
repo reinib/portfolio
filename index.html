@@ -3,72 +3,256 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brent Reininger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- bootstrap and CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" >
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Brent Reininger</title>
+    <link rel="stylesheet" href="css/styles.css">    
+
 </head>
-<body>
 
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" mr-auto href="#">BR</a>
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                </div>
-        </div>
-    </nav>    
+<body>     
 
-    <div class="bg"></div>
-    <div class="jumbotron">
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border"><strong>BRENT REININGER</strong></span>
+      </div>
+    </div>
+    
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    
+        <!-- <nav class="navbar navbar-dark navbar-expand-sm fixed-top display-none" style="background:white;">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" mr-auto href="#">BR</a>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="#"><span class="navborder">HOME</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span class="navborder">ABOUT ME</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span class="navborder">PROJECTS</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"><span class="navborder">CONTACT</span></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>     -->
+        
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 mt-5">
-                    <h1>Brent Reininger</h1>
-                    <p class="lead">+ Web Developer in Seattle, WA</p>
+            <div class="row row-content">
+                <div class="col-12 col-sm-2"></div>
+                <div class="col-12 col-sm-8">
+                        <div style="text-align:center;" class="image-cropper mb-3">
+                            <img class="profile-pic" alt="profile pic" src="./imgs/profilepic.jpg" class="rounded" />
+                        </div>
+                    <h3 style="text-align:center;">About Me</h3>
+                    <p align="center">Software Engineer focused on developing high-quality web applications utilizing modern technologies. Experienced in the full stack web development using Python, Java, and JavaScript. Implementing modern front-end frameworks like Angular and React to efficiently server client's needs. Creating aesthetically pleasing and responsive UX design with Bootstrap.</p>                
                 </div>
             </div>
-        </div>    
-    </div>
-
-    <div class="pgtwo">
-        <div class="container">
-            <h1>This is the second page</h1>
         </div>
+
     </div>
-
-    <div class="bg2"></div>
-
     
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        var jumboHeight = $('.jumbotron').outerHeight();
-        function parallax(){
-            var scrolled = $(window).scrollTop();
-            $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-        }
-
-        $(window).scroll(function(e){
-            parallax();
-        });
+    <div class="bgimg-2">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-12 col-md-1 caption display-none" style="margin-left:40px;">
+            <span class="border"><strong class="display-none">TECHNICAL</strong></span>
+          </div>
+          <div class="col-12 offset-md-9 col-md-2 caption display-none">
+            <span class="border"><strong class="display-none">SKILLS</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    </script>
+    <div style="position:relative;">
+      <div style="color:#282E34;;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="container">
+          <div class="row row-content">
+            <div class="col-12 col-lg-6 pyramid">
+
+              <!-- pyramid up -->
+
+              <!-- <div class="row row-content">
+                <div class="col-3"></div>
+                <div class="col-4">
+                  <img class="react-icon" style="width:200px;margin-left:9px;" src="./icons/React-icon-blue.png" alt="">
+                </div>
+                <div class="col-4"></div>
+              </div> 
+
+              <table>
+                <tr>
+                  <td style="color:#fff">buffer</td>
+                </tr> 
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><img style="width:70px;" src="./icons/GitHub.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/python-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/angular-white.png" alt=""></td>
+                </tr>  
+                <tr>
+                  <td></td>
+                  <td><img style="width:70px;" src="./icons/java.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/json.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/bootstrap-purple.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/flask.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/django.png" alt=""></td>                    
+                </tr> 
+                <tr>                
+                  <td><img style="width:70px;" src="./icons/html-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/mongoDB-white.png" alt=""></td>                
+                  <td><img style="width:70px;" src="./icons/css-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/express-js.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/javascript-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/node.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/mysql-white.png" alt=""></td>
+                  </tr>                
+              </table> -->
+
+              <table>
+                <tr>                
+                  <td><img style="width:70px;" src="./icons/html-black.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/mongoDB-black.png" alt=""></td>                
+                  <td><img style="width:70px;" src="./icons/css-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/express-js.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/javascript-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/node.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/mysql-black.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><img style="width:70px;" src="./icons/java.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/json.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/bootstrap-purple.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/flask.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/django.png" alt=""></td>                    
+                </tr>  
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><img style="width:70px;" src="./icons/GitHub.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/python-white.png" alt=""></td>
+                  <td><img style="width:70px;" src="./icons/angular-black.png" alt=""></td>
+                </tr>  
+                <tr>
+                  <td style="color:#fff">buffer</td>
+                </tr>         
+              </table>
+      
+              <div class="row row-content">
+                <div class="col-3"></div>
+                <div class="col-4">
+                  <img class="react-icon" style="width:200px;margin-left:8px;" src="./icons/React-icon-blue.png" alt="">
+                </div>
+                <div class="col-5"></div>
+              </div>              
+            </div>               
+
+            <div class="col-12 col-lg-6">
+              <div class="container">
+                <div class="row row-content">
+                    <div class="col-4">
+                        <h3>Tools</h3>
+                        <div class="container">
+                          <div class="row row-content">
+                            <div class="col-12 col-md-4">
+                              <ul>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Angular</li>
+                                <li>Mongoose</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Flask</li>
+                                <li>Django</li>
+                                <li>jQuery</li>
+                                <li>AJAX</li>
+                                <li>Bootstrap</li>
+                                <li>Less</li>
+                                <li>Sass</li>
+                                <li>Git</li>  
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h3>Languages</h3>
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>Python</li>
+                          <li>Java</li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-4">
+                          <h3>Databases</h3>
+                          <ul>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                          </ul>
+                      </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bgimg-3">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT INFO</span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        
+        <div class="container">
+          <div class="row row-content">
+            <div class="col-12 col-md-3" style="text-align:center;">
+              <h1><i class="fa fa-envelope fa-lg"></i></h1>
+              <h3>EMAIL</h3>
+              <p>brent.reininger89@gmail.com</p>
+            </div>
+            <div class="col-12 col-md-3" style="text-align:center;">
+              <h1><i class="fa fa-mobile fa-lg"></i></h1>
+              <h3>MOBILE</h3>
+              <p>425-890-1599</p>
+            </div>
+            <div class="col-12 col-md-3" style="text-align:center;">              
+              <a href="https://www.linkedin.com/in/brent-reininger/"><h1><i class="fa fa-linkedin-square fa-lg"></i></h1></a>
+              <h3>LINKEDIN</h3>
+              <p>/brent-reininger</p>
+            </div>
+            <div class="col-12 col-md-3" style="text-align:center;">
+              <a href="https://github.com/reinib"><h1><i class="fa fa-github fa-lg"></i></h1></a>              
+              <h3>GITHUB</h3>
+              <p>/reinib</p>
+              </div>
+          </div>
+        </div>
+                      
+      </div>
+    </div>
+    
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">THANKS FOR VISITING!</span>
+      </div>
+    </div>
+    
 </body>
 </html>
