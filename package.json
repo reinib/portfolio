@@ -1,24 +1,26 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "description": "This is a portfolio for Brent Reininger",
-    "main": "index.html",
-    "scripts": {
-      "start": "npm run lite",
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "lite": "lite-server"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-      "lite-server": "^2.3.0",
-      "node-sass": "^4.7.2"
-    },
-    "dependencies": {
-      "bootstrap": "^4.1.2",
-      "bootstrap-social": "^5.1.1",
-      "font-awesome": "^4.7.0",
-      "jquery": "^3.3.1",
-      "popper.js": "^1.12.9"
-    }
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is a portfolio for Brent Reininger",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "deploy": "gh-pages -d dist",
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://reinib.github.io/portfolio",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "gh-pages": "^2.0.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
   }
+}
